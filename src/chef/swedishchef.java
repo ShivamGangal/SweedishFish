@@ -8,7 +8,7 @@ public class swedishchef {
 		Scanner in = new Scanner(System.in);
 		ArrayList<String> strings = new ArrayList<String>();
 
-		for (int u = 0; u < 5; u++) {
+		for (int k = 0; k < 5; k++) {
 			strings.add(" " + in.nextLine());
 		}
 		System.out.println(strings);
