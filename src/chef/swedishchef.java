@@ -17,7 +17,7 @@ public class swedishchef {
 
 			String input = strings.get(n);
 			input = input.replaceAll("THE", "ZEE");
-			
+			// Maggie place your code here
 			
 			input = input.replaceAll("O", "U");
 			input = input.replaceAll("IR", "UR");
