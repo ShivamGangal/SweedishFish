@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class swedishchef {
 
 	public static void main(String[] args) {
+		// Shivam's code
 		Scanner in = new Scanner(System.in);
 		ArrayList<String> strings = new ArrayList<String>();
 
@@ -19,6 +20,8 @@ public class swedishchef {
 			input = input.replaceAll("THE", "ZEE");
 			// Maggie place your code here
 			
+			
+			// Andrew's Code:
 			input = input.replaceAll("O", "U");
 			input = input.replaceAll("IR", "UR");
 			input = input.replaceAll("TION", "SHUN");
