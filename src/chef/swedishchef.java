@@ -32,7 +32,6 @@ public class swedishchef {
 					posOfSpace.add(i);
 				}
 			}
-			System.out.println(posOfSpace);
 			ArrayList<String> oneWord = new ArrayList<String>();
 			for (int j = 0; j < posOfSpace.size(); j++) { // Places each word in the array oneWord
 				String word;
@@ -44,7 +43,6 @@ public class swedishchef {
 				oneWord.add(word);
 
 			}
-			System.out.println(oneWord);
 
 			for (int k = 0; k < oneWord.size(); k++) { // Makes two substrings, one the first letter and one the rest of
 														// the
