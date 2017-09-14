@@ -66,9 +66,9 @@ public class swedishchef {
 			}
 			// Removes the space from the front of the sentence
 
-			input = input.substring(1); // Removes the space from the front of the sentence
+			
 
-			input = input + "Bork Bork Bork!"; // adds Bork Bork Bork! to the end
+			
 
 			//Srujan put your code here:
 			
