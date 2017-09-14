@@ -78,7 +78,7 @@ public class swedishchef {
 			
 
 			input = input.substring(1); 
-			input = input + ". BORK BORK BORK!";
+			input = input + ". BORK BORK BORK!";// Adds BORK BORK BORK
 
 
 			System.out.println(input); // FINAL INPUT FOR THIS BLOCk
