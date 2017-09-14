@@ -62,14 +62,14 @@ public class swedishchef {
 			for (int m = 0; m < oneWord.size(); m++) {
 				input = input + oneWord.get(m) + " ";
 			}
-			input = input.substring(1); // Removes the space from the front of the sentence
+			// Removes the space from the front of the sentence
 			//Srujan put your code here:
 			
 			
 			//Saket put your code here:
 			
 			
-			
+			input = input.substring(1); 
 			input = input + ". BORK BORK BORK!";
 			System.out.println(input); // FINAL INPUT FOR THIS BLOCk
 		}
