@@ -6,25 +6,25 @@ public class swedishchef {
 
 	public static void main(String[] args) {
 		// Shivam's code
-		Scanner in = new Scanner(System.in);
-		ArrayList<String> strings = new ArrayList<String>();
+		Scanner in = new Scanner(System.in);//user inputs
+		ArrayList<String> strings = new ArrayList<String>(); //create an array
 
-		for (int k = 0; k < 5; k++) {
-			strings.add(" " + in.nextLine());
+		for (int k = 0; k < 5; k++) { 
+			strings.add(" " + in.nextLine()); //input five strings in each row
 		}
-		System.out.println(strings);
+		System.out.println(strings); //print strings in an array
 
 		for (int n = 0; n < strings.size(); n++) { // Changes each string
 
 			String input = strings.get(n);
 			input = input.replaceAll("THE", "ZEE");
-			// Maggie place your code here
-			input = input.replaceAll("AN", "UN");
+			// Maggie's code. Goes down into andrew's
+			input = input.replaceAll("AN", "UN"); //replace certain letters
 			input = input.replaceAll(" A ", " Q ");
 			
-			// Andrew's Code
+			// Andrew's Code 
 			input = input.replaceAll("O", "U");
-			input = input.replaceAll("UW", "OO");//replace to OO 
+			input = input.replaceAll("UW", "OO"); 
 			input = input.replaceAll("AU", "OO");
 			input = input.replaceAll("A", "E");
 			input = input.replaceAll(" Q ", " A ");
