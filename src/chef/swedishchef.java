@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class swedishchef {
 
 	public static void main(String[] args) {
+		// Shivam's code
 		Scanner in = new Scanner(System.in);
 		ArrayList<String> strings = new ArrayList<String>();
 
@@ -17,6 +18,10 @@ public class swedishchef {
 
 			String input = strings.get(n);
 			input = input.replaceAll("THE", "ZEE");
+			// Maggie place your code here
+			
+			
+			// Andrew's Code:
 			input = input.replaceAll("O", "U");
 			input = input.replaceAll("IR", "UR");
 			input = input.replaceAll("TION", "SHUN");
@@ -60,7 +65,18 @@ public class swedishchef {
 				input = input + oneWord.get(m) + " ";
 			}
 			input = input.substring(1); // Removes the space from the front of the sentence
+<<<<<<< HEAD
 			input = input + "Bork Bork Bork!"; // adds Bork Bork Bork! to the end
+=======
+			//Srujan put your code here:
+			
+			
+			//Saket put your code here:
+			
+			
+			
+			input = input + "Bork Bork Bork!";
+>>>>>>> branch 'master' of https://github.com/ShivamGangal/SweedishFish.git
 			System.out.println(input); // FINAL INPUT FOR THIS BLOCk
 		}
 	}
