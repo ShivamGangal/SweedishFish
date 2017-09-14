@@ -70,7 +70,7 @@ public class swedishchef {
 			
 			
 			
-			input = input + "Bork Bork Bork!";
+			input = input + ". BORK BORK BORK!";
 			System.out.println(input); // FINAL INPUT FOR THIS BLOCk
 		}
 	}
