@@ -60,7 +60,7 @@ public class swedishchef {
 				input = input + oneWord.get(m) + " ";
 			}
 			input = input.substring(1); // Removes the space from the front of the sentence
-			input = input + "Bork Bork Bork!";
+			input = input + "Bork Bork Bork!"; // adds Bork Bork Bork! to the end
 			System.out.println(input); // FINAL INPUT FOR THIS BLOCk
 		}
 	}
