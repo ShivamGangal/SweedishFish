@@ -34,7 +34,6 @@ public class swedishchef {
 					posOfSpace.add(i);
 				}
 			}
-			System.out.println(posOfSpace);
 			ArrayList<String> oneWord = new ArrayList<String>();
 			for (int j = 0; j < posOfSpace.size(); j++) { // Places each word in the array oneWord
 				String word;
@@ -46,7 +45,6 @@ public class swedishchef {
 				oneWord.add(word);
 
 			}
-			System.out.println(oneWord);
 
 			for (int k = 0; k < oneWord.size(); k++) { // Makes two substrings, one the first letter and one the rest of
 														// the
@@ -66,8 +64,23 @@ public class swedishchef {
 			for (int m = 0; m < oneWord.size(); m++) {
 				input = input + oneWord.get(m) + " ";
 			}
+			// Removes the space from the front of the sentence
+
 			input = input.substring(1); // Removes the space from the front of the sentence
-			input = input + "Bork Bork Bork!";
+
+			input = input + "Bork Bork Bork!"; // adds Bork Bork Bork! to the end
+
+			//Srujan put your code here:
+			
+			
+			//Saket put your code here:
+			
+			
+
+			input = input.substring(1); 
+			input = input + ". BORK BORK BORK!";
+
+
 			System.out.println(input); // FINAL INPUT FOR THIS BLOCk
 		}
 	}
