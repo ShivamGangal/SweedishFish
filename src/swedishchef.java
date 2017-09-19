@@ -1,4 +1,3 @@
-package chef.SweedishFish.src.chef;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -6,25 +5,25 @@ public class swedishchef {
 
 	public static void main(String[] args) {
 		// Shivam's code
-		Scanner in = new Scanner(System.in);//user inputs
-		ArrayList<String> strings = new ArrayList<String>(); //create an array
+		Scanner in = new Scanner(System.in);// user inputs
+		ArrayList<String> strings = new ArrayList<String>(); // create an array
 
-		for (int k = 0; k < 5; k++) { 
-			strings.add(" " + in.nextLine()); //input five strings in each row
+		for (int k = 0; k < 5; k++) {
+			strings.add(" " + in.nextLine()); // input five strings in each row
 		}
-		System.out.println(strings); //print strings in an array
+		System.out.println(strings); // print strings in an array
 
 		for (int n = 0; n < strings.size(); n++) { // Changes each string
 
 			String input = strings.get(n);
 			input = input.replaceAll("THE", "ZEE");
 			// Maggie's code. Goes down into andrew's
-			input = input.replaceAll("AN", "UN"); //replace certain letters
+			input = input.replaceAll("AN", "UN"); // replace certain letters
 			input = input.replaceAll(" A ", " Q ");
-			
-			// Andrew's Code 
+
+			// Andrew's Code
 			input = input.replaceAll("O", "U");
-			input = input.replaceAll("UW", "OO"); 
+			input = input.replaceAll("UW", "OO");
 			input = input.replaceAll("AU", "OO");
 			input = input.replaceAll("A", "E");
 			input = input.replaceAll(" Q ", " A ");
@@ -40,9 +39,9 @@ public class swedishchef {
 			ArrayList<String> oneWord = new ArrayList<String>();
 			for (int j = 0; j < posOfSpace.size(); j++) { // Places each word in the array oneWord
 				String word;
-				if(j < posOfSpace.size() - 1) {
-				word = input.substring(posOfSpace.get(j), posOfSpace.get(j + 1));
-				}else {
+				if (j < posOfSpace.size() - 1) {
+					word = input.substring(posOfSpace.get(j), posOfSpace.get(j + 1));
+				} else {
 					word = input.substring(posOfSpace.get(j));
 				}
 				oneWord.add(word);
@@ -69,24 +68,39 @@ public class swedishchef {
 			}
 			// Removes the space from the front of the sentence
 
-			
+			// Srujan put your code here:
 
-			
+			for (int i = 0; i < oneWord.size(); i++) {
+				int leng = oneWord.get(i).length();
+				String endWord = oneWord.get(i).substring(leng - 2, leng);
+				String midWord = oneWord.get(i).substring(0, leng - 2);
+				endWord = endWord.replaceAll("EN", "EE");
+				oneWord.set(i, midWord + endWord);
+			}
+			for (int i = 0; i < oneWord.size(); i++) {
+				String begWord = oneWord.get(i).substring(0, 2);
+				String midWord = oneWord.get(i).substring(2);
+				midWord = midWord.replaceAll("U", "OO");
+				oneWord.set(i, begWord + midWord);
+			}
 
-			//Srujan put your code here:
-			
-			
-			//Saket put your code here:
-			
-			
+			input = ""; // Sets input to nothing
 
-			input = input.substring(1); 
+			for (int m = 0; m < oneWord.size(); m++) {
+				input = input + oneWord.get(m) + " ";
+			}
+
+			input = input.replaceAll("V", "F");
+			input = input.replaceAll("W", "V");
+			// Removes the space from the front of the sentence
+
+			// Saket put your code here:
+
+			input = input.substring(1);
 			input = input + ". BORK BORK BORK!";// Adds BORK BORK BORK
-
 
 			System.out.println(input); // FINAL INPUT FOR THIS BLOCk
 		}
 	}
 
 }
-
